@@ -43,6 +43,7 @@ for (i = dayStart; i <= dayEnd; i++) {
     var lockEl = $('<i class="fa-solid fa-lock"></i>');
 
     timeSlotLock.append(lockEl);
+
     // var storedEvent = $('timeSlot'+i);
 
     // timeSlotLock.on('click', function () {
@@ -74,6 +75,12 @@ containerEl.children().on("click", ".saveBtn", function () {
     localStorage.setItem(selectedElID, enteredText);
 
     document.getElementById(selectedElID).value = localStorage.getItem(selectedElID);
+
+    var test = $($(this).children(i));
+
+    // var test2 = $(this).children(i).getAttribute("class");
+    // console.log(test.getAttribute("class"));
+    // $(this).children(i).attr("class", "fa-solid fa-unlock")
 
 
     // localStorage.setItem("timeSlot"+i, JSON.stringify(storedScore));
