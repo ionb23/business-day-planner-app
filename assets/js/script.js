@@ -43,24 +43,8 @@ for (i = dayStart; i <= dayEnd; i++) {
     var lockEl = $('<i class="fa-solid fa-lock"></i>');
 
     timeSlotLock.append(lockEl);
-
-    // var storedEvent = $('timeSlot'+i);
-
-    // timeSlotLock.on('click', function () {
-    //     // localStorage.setItem("timeSlot"+i, JSON.stringify(storedScore));
-    //     localStorage.setItem("timeSlot"+i, storedEvent);
-    //     // if (isDark) {
-    //     //   $('body').css({ 'background-color': '#d9e9e8', color: '#1a1a1a' });
-    //     //   isDark = !isDark;
-    //     // } else {
-    //     //   $('body').css({ 'background-color': '#1a1a1a', color: '#d9e9e8' });
-    //     //   isDark = !isDark;
-    //     // }
-    //   });
-
 }
 
-// ------------------
 
 containerEl.children().on("click", ".saveBtn", function () {
 
@@ -77,21 +61,6 @@ containerEl.children().on("click", ".saveBtn", function () {
     document.getElementById(selectedElID).value = localStorage.getItem(selectedElID);
 
     var test = $($(this).children(i));
-
-    // var test2 = $(this).children(i).getAttribute("class");
-    // console.log(test.getAttribute("class"));
-    // $(this).children(i).attr("class", "fa-solid fa-unlock")
-
-
-    // localStorage.setItem("timeSlot"+i, JSON.stringify(storedScore));
-    // localStorage.setItem(selectedEl, selectedEl);
-    // if (isDark) {
-    //   $('body').css({ 'background-color': '#d9e9e8', color: '#1a1a1a' });
-    //   isDark = !isDark;
-    // } else {
-    //   $('body').css({ 'background-color': '#1a1a1a', color: '#d9e9e8' });
-    //   isDark = !isDark;
-    // }
 });
 
 document.getElementById('timeSlot9').value = localStorage.getItem('timeSlot9');
