@@ -1,4 +1,4 @@
-# challenge-7-planner-app
+# Business Day Planner App
 
 ## Description 
 
